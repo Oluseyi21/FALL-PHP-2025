@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Robboto', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+/* header */
+header{
+    background-color: #0075eb;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.main-nav .container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-title{
+    font-family: 'montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav-links a:hover{
+    text-decoration: underline;
+}
+/* footer */
+footer{
+    background-color: #0075eb;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+/* main container */
+main{
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+/* page header */
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.page-header h1{
+    color: #0075eb;
+    margin: 0;
+}
+.btn-link{
+    background-color: #0075eb;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+.btn-link:hover{
+    background-color: #005bb5;
+}
+/* messages */
+.message{
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+.message-success{
+    background-color: #d4edda;
+    color: #155724;
+}
+.message-info{
+    background-color: #cce5ff;
+    color: #004085;
+}
+/* forms */
+.create-form{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.form-box{
+    width: 100%;
+}
+.form-group{
+    margin-bottom: 15px;
+}
+label{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="file"],
+textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+textarea{
+    resize: vertical;
+}
+button.btn{
+    background-color: #0075eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+button.btn:hover{
+    background-color: #005bb5;
+}
+/* index page */
+.data-table{
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.data-table th,
+.data-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    vertical-align: middle;
+}
+.data-table th{
+    background-color: #0075eb;
+    color: white;
+    font-weight: 600;
+}
+.data-table tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+.profile-img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #0075eb;
+}
+/* profile page */
+.profile-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.profile-card-large {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.profile-img-large {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #0075eb;
+    margin-bottom: 1rem;
+}
+
+.profile-card-large h2 {
+    color: #0075eb;
+    margin-bottom: 0.5rem;
+}
+
+.profile-card-large p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+    color: #333;
+}
+
+.profile-card-large em {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/*responsive design */
+@media (max-width: 768px) {
+    .main-nav .container{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .nav-links{
+        flex-direction: column;
+        align-items: center;
+    }
+    .data-table th, .data-table td{
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    .profile-img{
+        width: 50px;
+        height: 50px;
+    }
+}
